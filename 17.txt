@@ -1,0 +1,13 @@
+<?php
+           
+            $conn=mysqli_connect('localhost','root','','alpaksh');
+            if(!$conn){
+                die('connection error');        
+            }
+            $query='DELETE FROM DATA WHERE NAME="HELLO"';
+            $result=mysqli_query($conn,$query);
+            if($result){
+               echo "deleted";
+            }
+                
+        ?>

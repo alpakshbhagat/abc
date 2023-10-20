@@ -1,0 +1,6 @@
+<?php
+    $a = array('Name'=>'Alpaksh', 'Class'=>'BCA', 'Rollno'=> '565');
+    foreach ($a as $k => $v) {
+        echo  $k.": ".$v .'<br>';
+    }
+?>

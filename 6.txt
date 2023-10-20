@@ -1,0 +1,9 @@
+<?php
+$a=5;
+$b= 2;
+echo"Addition is ".$a+$b."<br>";
+echo"Substraction is ".$a-$b."<br>";
+echo"Multiplication is ".$a*$b."<br>";
+echo"Division is ".$a/$b."<br>";
+echo"Modulus is ".$a%$b."<br>";
+?>

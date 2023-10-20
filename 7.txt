@@ -1,0 +1,16 @@
+<?php
+function palindrome($a){
+    $n=strrev($a);
+   if($n===$a){
+        echo"palindrome";
+    }
+    else{
+        echo "Not palindrome";
+    }
+}
+
+$a=(string)121;
+
+palindrome($a);
+
+?>

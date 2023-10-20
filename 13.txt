@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <form method="POST">
+        <label>Registration No.:<input type="text" name="reg"></label><br><br>
+        <label>Name:<input type="text" name="name"></label><br><br>
+        <label>Parentage:<input type="text" name="parentage"></label><br><br>
+        <label>Mobile No.:<input type="number" name="number"></label><br><br>
+        <input type="submit" value="submit"><br><br>
+    </form> 
+    <?php
+ 
+
+    echo $_POST['reg']."<br>";
+    echo $_POST['name']."<br>";
+    echo $_POST['parentage']."<br>";
+    echo $_POST['number']."<br>";
+
+    ?>
+</body>
+</html>

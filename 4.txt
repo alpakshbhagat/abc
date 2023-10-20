@@ -1,0 +1,9 @@
+<?php
+$a=10;
+$b= 5;
+echo"Before swapping:<br> $a<br>$b<br>";
+$c= $a;
+$a=$b;
+$b=$c;
+echo"After swapping:<br> $a<br>$b";
+?>

@@ -1,0 +1,12 @@
+<?php
+    $a=10;
+    $b= 5;
+    function swap( $a, $b ) {
+        $temp= $a;
+        $a= $b;
+        $b= $temp;
+        echo"After swapping: $a \t $b";
+    }
+    echo"Before swapping: $a \t $b<br>";
+    swap( $a, $b );
+?>

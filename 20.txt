@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <label>Name:<input type="text" name="name"></label><br><br>
+        <label>Roll No.:<input type="number" name="roll"></label><br><br>
+        <input type="submit">
+        <?php
+            $name=$_POST['name'];
+            $roll=$_POST['roll'];
+
+            $conn=mysqli_connect('localhost','root','','alpaksh');
+            if(!$conn){
+                die('connection error');        
+            }
+            $query="INSERT INTO `data` (`Name`, `Rollno`) VALUES ('$name', '$roll')";
+            $result=mysqli_query($conn,$query);
+            if($result){
+                $a = "Select * from data";
+                echo mysqli_query($conn,(string)$a);
+            }
+            mysqli_close($conn);  
+        ?>
+    </form>
+</body>
+</html>
